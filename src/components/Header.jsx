@@ -1,34 +1,36 @@
 import React from "react";
+import TextSlideOutIn from "./animated/TextSlideOutIn";
+import { LuAlignRight } from "react-icons/lu";
 
 const Header = () => {
-  const navLinks = ["Home", "About", "Pages"];
-
-  const charVariants = {
-    initial: { y: 0, opacity: 1 },
-    hoverOut: { y: -20, opacity: 0 },
-    hoverIn: { y: 20, opacity: 0 },
-    visible: { y: 0, opacity: 1 },
-  };
-  const splitText = (text) =>
-    text.split("").map((char, index) => (
-      <motion.span
-        key={index}
-        className="inline-block"
-        initial="visible"
-        whileHover={["hoverOut", "hoverIn"]}
-        variants={charVariants}
-        transition={{ duration: 0.3, delay: index * 0.05 }}
-      >
-        {char}
-      </motion.span>
-    ));
+  const links = [
+    "HOME",
+    "ABOUT",
+    "PAGES",
+    "SERVICES",
+    "TEAM",
+    "BLOG",
+    "CONTACT",
+  ];
 
   return (
-    <nav>
-      <div className="">
-        <img src="/logo_b.webp" alt="" />
+    <header className="flex justify-between items-center px-6 py-4 bg-gray-800 text-white">
+      {/* Logo */}
+      <div>
+        <img src="/logo_b.webp" alt="Logo" className="h-10" />
       </div>
-    </nav>
+
+      <nav className="flex space-x-6">
+        {links.map((link) => (
+          <a key={link} href={`#${link.toLowerCase()}`} className="text-lg">
+            <TextSlideOutIn text={link} />
+          </a>
+        ))}
+      </nav>
+      <div>
+        <LuAlignRight size={24} className="" />
+      </div>
+    </header>
   );
 };
 
