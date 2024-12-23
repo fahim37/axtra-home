@@ -1,6 +1,7 @@
 import React from "react";
 import TextSlideOutIn from "./animated/TextSlideOutIn";
-import { LuAlignRight } from "react-icons/lu";
+import { CgMenuRight } from "react-icons/cg";
+import { FaMagnifyingGlass } from "react-icons/fa6";
 
 const Header = () => {
   const links = [
@@ -20,15 +21,17 @@ const Header = () => {
         <img src="/logo_b.webp" alt="Logo" className="h-10" />
       </div>
 
-      <nav className="flex space-x-6">
+      <nav className="flex space-x-12">
         {links.map((link) => (
           <a key={link} href={`#${link.toLowerCase()}`} className="text-lg">
             <TextSlideOutIn text={link} />
           </a>
         ))}
       </nav>
-      <div>
-        <LuAlignRight size={24} className="" />
+      <div className="flex items-center space-x-8">
+        <FaMagnifyingGlass size={20} />
+        <hr className="h-5 w-px bg-white border-none" />
+        <CgMenuRight size={20} />
       </div>
     </header>
   );
