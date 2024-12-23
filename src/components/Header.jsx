@@ -15,22 +15,22 @@ const Header = () => {
   ];
 
   return (
-    <header className="flex justify-between items-center px-6 py-4 bg-gray-800 text-white">
+    <header className="flex justify-between items-center px-6 py-4 ">
       {/* Logo */}
       <div>
         <img src="/logo_b.webp" alt="Logo" className="h-10" />
       </div>
 
-      <nav className="flex space-x-12">
+      <nav className="hidden lg:flex space-x-12">
         {links.map((link) => (
           <a key={link} href={`#${link.toLowerCase()}`} className="text-lg">
             <TextSlideOutIn text={link} />
           </a>
         ))}
       </nav>
-      <div className="flex items-center space-x-8">
+      <div className="flex items-center space-x-8 cursor-pointer">
         <FaMagnifyingGlass size={20} />
-        <hr className="h-5 w-px bg-white border-none" />
+        <hr className="h-5 w-px bg-black border-none" />
         <CgMenuRight size={20} />
       </div>
     </header>

@@ -4,6 +4,7 @@ import HeroSection from "./components/home/HeroSection";
 import Brands from "./components/home/Brands";
 import About from "./components/home/About";
 import Services from "./components/home/Services";
+import ModernCarousel from "./components/home/ModernCarousel";
 
 const App = () => {
   return (
@@ -12,7 +13,8 @@ const App = () => {
       <HeroSection />
       <Brands />
       <About />
-      <Services />
+      {/* <Services /> */}
+      <ModernCarousel />
     </div>
   );
 };
