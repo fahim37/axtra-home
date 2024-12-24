@@ -5,6 +5,7 @@ import Brands from "./components/home/Brands";
 import About from "./components/home/About";
 import Services from "./components/home/Services";
 import ModernCarousel from "./components/home/ModernCarousel";
+import Testimonial from "./components/home/Testimonial";
 
 const App = () => {
   return (
@@ -14,7 +15,8 @@ const App = () => {
       <Brands />
       <About />
       {/* <Services /> */}
-      <ModernCarousel />
+      {/* <ModernCarousel /> */}
+      <Testimonial />
     </div>
   );
 };
