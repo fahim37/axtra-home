@@ -9,6 +9,7 @@ import Testimonial from "./components/home/Testimonial";
 import Workflow from "./components/home/Workflow";
 import Pricing from "./components/home/Pricing";
 import Blogs from "./components/home/Blogs";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
       <Workflow />
       <Pricing />
       <Blogs />
+      <Footer />
     </div>
   );
 };
