@@ -8,6 +8,7 @@ import ModernCarousel from "./components/home/ModernCarousel";
 import Testimonial from "./components/home/Testimonial";
 import Workflow from "./components/home/Workflow";
 import Pricing from "./components/home/Pricing";
+import Blogs from "./components/home/Blogs";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
       <Testimonial />
       <Workflow />
       <Pricing />
+      <Blogs />
     </div>
   );
 };

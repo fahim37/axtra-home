@@ -3,33 +3,33 @@ import StaggeredText from "../animated/StaggeredText";
 
 const HeroSection = () => {
   return (
-    <div className="w-screen relative">
-      <divs
-        className="absolute bottom-[-48%] right-0 xl:right-[-15%] h-[95%] w-[78%] opacity-100 bg-no-repeat hidden md:block"
+    <div className="w-screen relative overflow-hidden">
+      {/* <div
+        className="absolute bottom-0 right-0 h-[95%] w-[80%] opacity-100 bg-no-repeat hidden md:blockk"
         style={{
           backgroundImage: "url('/hero1.jpg')",
+          backgroundSize: "contain",
         }}
       />
-
+      <div
+        className="absolute bottom-0 left-[-60%] h-[70%] w-[70%] opacity-30 bg-no-repeat hidden md:block"
+        style={{
+          backgroundImage: "url('/home/herobg1.png')",
+          transform: "scaleX(-1)",
+        }}
+      />
+      <div
+        className="absolute bottom-0 right-0 h-[95%] w-[10%] opacity-100 bg-no-repeat hidden md:block"
+        style={{
+          backgroundImage: "url('/home/sparcle.png')",
+        }}
+      /> */}
       <div className=" pt-16 min-h-screen md:w-[88vw] mx-auto overflow-hidden bg-white">
-        <divs
-          className="absolute bottom-0 left-[-60%] h-[70%] w-[70%] opacity-30 bg-no-repeat hidden md:block"
-          style={{
-            backgroundImage: "url('/home/herobg1.png')",
-            transform: "scaleX(-1)",
-          }}
-        />
-        <divs
-          className="absolute bottom-0 right-0 h-[95%] w-[10%] opacity-100 bg-no-repeat hidden md:block"
-          style={{
-            backgroundImage: "url('/home/sparcle.png')",
-          }}
-        />
         <div className="flex gap-x-5 items-center">
           <h3 className="uppercase text-xl font-bold">Digital</h3>
           <div className="h-[1px] w-24 bg-black" />
         </div>
-        <div>
+        <div className="overflow-hidden">
           <StaggeredText
             text="MARK"
             delay={0}
