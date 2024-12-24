@@ -23,7 +23,7 @@ const WfTwo = () => {
             patches to go back to the origins of the user experience: the first
             mention of the user and its importance was born in the
           </p>
-          <div className="md:pt-20 md:pl-20">
+          <div className="md:pt-20 md:pl-20 space-x-2">
             <Button
               variant="outline"
               className="rounded-3xl h-8 hover:bg-black hover:text-white uppercase bg-transparent border border-black"

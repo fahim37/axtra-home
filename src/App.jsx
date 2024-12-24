@@ -7,9 +7,9 @@ import Services from "./components/home/Services";
 import ModernCarousel from "./components/home/ModernCarousel";
 import Testimonial from "./components/home/Testimonial";
 import Workflow from "./components/home/Workflow";
-import Pricing from "./components/home/Pricing";
 import Blogs from "./components/home/Blogs";
 import Footer from "./components/Footer";
+import Pricing from "./components/home/Pricing";
 
 const App = () => {
   return (

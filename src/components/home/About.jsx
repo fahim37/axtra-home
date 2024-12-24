@@ -1,4 +1,5 @@
 import React from "react";
+import AnimatedButton from "../animated/AnimatedButton";
 
 const About = () => {
   return (
@@ -8,7 +9,7 @@ const About = () => {
           <div className="w-full md:w-1/2 flex justify-center pb-10">
             <img src="/home/Aboutimg.webp" alt="About" />
           </div>
-          <div className="w-full md:w-1/2 items-start transform-none md:-translate-y-24 relative">
+          <div className="w-full md:w-1/2 items-start transform-none md:translate-y-3 relative">
             <div className="absolute top-2 left-0 md:left-36 w-[1px] h-32 bg-gray-700 md:-translate-y-[175px]"></div>
             <div className="absolute top-[260px] left-0 md:left-36 w-[1px] h-[670px] bg-gray-700"></div>
             <h2 className="uppercase text-white pb-4">Who We Are</h2>
@@ -22,6 +23,9 @@ const About = () => {
               insights with design, technological data to produce brand
               experiences that customers love our services.
             </p>
+            <div className="lg:pl-16  xl:pl-40 mt-10">
+              <AnimatedButton variant="white">Explore Us</AnimatedButton>
+            </div>
           </div>
         </div>
       </div>

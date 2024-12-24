@@ -1,3 +1,4 @@
+import AnimatedButton from "@/components/animated/AnimatedButton";
 import React from "react";
 
 const WfFour = () => {
@@ -7,8 +8,8 @@ const WfFour = () => {
         Have you project in mind?
       </div>
       <div className="text-8xl font-medium">Let’s make something</div>
-      <div className="text-8xl font-medium">great together!</div>
-      <div>button</div>
+      <div className="text-8xl font-medium pb-10">great together!</div>
+      <AnimatedButton>Details</AnimatedButton>
     </div>
   );
 };

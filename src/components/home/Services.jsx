@@ -1,4 +1,5 @@
 import React from "react";
+import AnimatedButton from "../animated/AnimatedButton";
 
 const Services = () => {
   return (
@@ -21,7 +22,6 @@ const Services = () => {
           before buying.
         </p>
       </div>
-      {/* 2ndpart */}
       <hr className="border-gray-200 mt-20 mb-20" />
       <div className="grid grid-cols-1 md:grid-cols-[30%_40%_24%] lg:grid-cols-[30%_50%_20%] gap-4">
         <h2 className="uppercase font-bold text-4xl">
@@ -39,7 +39,7 @@ const Services = () => {
             <li>+ Promotion</li>
           </ul>
         </div>
-        <div>button</div>
+        <AnimatedButton>Details</AnimatedButton>
       </div>
 
       <hr className="border-gray-200 mt-20 mb-20" />
@@ -59,7 +59,7 @@ const Services = () => {
             <li>+ Promotion</li>
           </ul>
         </div>
-        <div>button</div>
+        <AnimatedButton>Details</AnimatedButton>
       </div>
       <hr className="border-gray-200 mt-20 mb-20" />
       <div className="grid grid-cols-1 md:grid-cols-[30%_40%_24%] lg:grid-cols-[30%_50%_20%] gap-4">
@@ -78,7 +78,7 @@ const Services = () => {
             <li>+ Promotion</li>
           </ul>
         </div>
-        <div>button</div>
+        <AnimatedButton>Details</AnimatedButton>
       </div>
       <hr className="border-gray-200 mt-20 mb-20" />
       <div className="grid grid-cols-1 md:grid-cols-[30%_40%_24%] lg:grid-cols-[30%_50%_20%] gap-4">
@@ -97,7 +97,7 @@ const Services = () => {
             <li>+ Promotion</li>
           </ul>
         </div>
-        <div>button</div>
+        <AnimatedButton>Details</AnimatedButton>
       </div>
     </div>
   );

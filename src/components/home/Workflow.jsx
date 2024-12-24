@@ -9,17 +9,14 @@ const Workflow = () => {
   const targetRef = useRef(null);
   const { scrollYProgress } = useScroll({ target: targetRef });
 
-  // State for screen size
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 768);
 
-  // Update screen size dynamically on resize
   useEffect(() => {
     const handleResize = () => setIsSmallScreen(window.innerWidth <= 768);
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // Transform only on larger screens
   const x = useTransform(
     scrollYProgress,
     [0, 1],
@@ -27,7 +24,7 @@ const Workflow = () => {
   );
 
   return (
-    <div className={`h-[${isSmallScreen ? "auto" : "500vh"}]`} ref={targetRef}>
+    <div className={isSmallScreen ? "h-auto" : "h-[500vh]"} ref={targetRef}>
       <div
         className={`h-[100vh] sticky top-0 ${
           isSmallScreen ? "overflow-auto" : "overflow-hidden"
