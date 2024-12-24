@@ -6,6 +6,8 @@ import About from "./components/home/About";
 import Services from "./components/home/Services";
 import ModernCarousel from "./components/home/ModernCarousel";
 import Testimonial from "./components/home/Testimonial";
+import Workflow from "./components/home/Workflow";
+import Pricing from "./components/home/Pricing";
 
 const App = () => {
   return (
@@ -14,9 +16,11 @@ const App = () => {
       <HeroSection />
       <Brands />
       <About />
-      {/* <Services /> */}
+      <Services />
       {/* <ModernCarousel /> */}
       <Testimonial />
+      <Workflow />
+      <Pricing />
     </div>
   );
 };

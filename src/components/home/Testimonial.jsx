@@ -41,14 +41,14 @@ export default function Testimonial() {
   }, []);
 
   return (
-    <div className="pt-16">
-      <div className="relative md:h-[1100px] w-full overflow-hidden bg-white px-4 py-20">
+    <div className="lg:pt-16">
+      <div className="relative md:h-[1100px] overflow-hidden bg-white lg:px-4 lg:py-20">
         <div
-          className="absolute bottom-[30%] right-0 h-[60%] w-full bg-cover bg-center bg-no-repeat opacity-90"
+          className="absolute bottom-[30%] right-0 h-[60%] w-full bg-cover bg-center bg-no-repeat lg:block hidden"
           style={{ backgroundImage: "url('/testimonial/bg.png')" }}
         />
         <motion.div
-          className="absolute left-[25%] top-[5%] w-48 h-48"
+          className="absolute left-[25%] top-[5%] w-48 h-48 lg:block hidden"
           style={{ transition: "transform 0.3s ease-out" }}
           animate={{
             x: mousePosition.x * 20,
@@ -63,11 +63,11 @@ export default function Testimonial() {
         </motion.div>
 
         <motion.div
-          className="absolute right-[30%] top-[10%] w-32 h-32"
+          className="absolute right-[30%] top-[10%] w-32 h-32 lg:block hidden"
           style={{ transition: "transform 0.3s ease-out" }}
           animate={{
-            x: mousePosition.x * 15,
-            y: mousePosition.y * 15,
+            x: mousePosition.x * 20,
+            y: mousePosition.y * 20,
           }}
         >
           <img
@@ -78,11 +78,11 @@ export default function Testimonial() {
         </motion.div>
 
         <motion.div
-          className="absolute left-[7%] bottom-[50%] w-40 h-40"
+          className="absolute left-[7%] bottom-[50%] w-40 h-40 lg:block hidden"
           style={{ transition: "transform 0.3s ease-out" }}
           animate={{
-            x: mousePosition.x * 25,
-            y: mousePosition.y * 25,
+            x: mousePosition.x * 20,
+            y: mousePosition.y * 20,
           }}
         >
           <img
@@ -93,7 +93,7 @@ export default function Testimonial() {
         </motion.div>
 
         <motion.div
-          className="absolute left-[10%] bottom-[25%] w-56 h-56"
+          className="absolute left-[10%] bottom-[25%] w-56 h-56 lg:block hidden"
           style={{ transition: "transform 0.3s ease-out" }}
           animate={{
             x: mousePosition.x * 20,
@@ -107,7 +107,7 @@ export default function Testimonial() {
           />
         </motion.div>
         <motion.div
-          className="absolute right-[9%] bottom-[28%] w-56 h-56"
+          className="absolute right-[9%] bottom-[28%] w-56 h-56 lg:block hidden"
           style={{ transition: "transform 0.3s ease-out" }}
           animate={{
             x: mousePosition.x * 20,
@@ -121,7 +121,7 @@ export default function Testimonial() {
           />
         </motion.div>
         <motion.div
-          className="absolute right-[15%] bottom-[12%] w-56 h-56"
+          className="absolute right-[15%] bottom-[12%] w-56 h-56 lg:block hidden"
           style={{ transition: "transform 0.3s ease-out" }}
           animate={{
             x: mousePosition.x * 20,
@@ -146,7 +146,7 @@ export default function Testimonial() {
             <CarouselContent>
               {testimonials.map((testimonial, index) => (
                 <CarouselItem key={index}>
-                  <Card className="border-none shadow-none md:w-[95%] bg-transparent">
+                  <Card className="border-none shadow-none lg:w-[95%] bg-transparent">
                     <div className="flex flex-col items-center text-center px-4 py-8 md:px-8 md:py-12  ">
                       <ImQuotesLeft className="w-16 h-16 mb-8 text-black" />
                       <p className="text-lg md:text-xl lg:text-2xl italic mb-8 leading-relaxed">

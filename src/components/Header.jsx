@@ -15,7 +15,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="flex justify-between items-center px-6 py-4 ">
+    <header className="sticky top-0 flex justify-between items-center px-6 py-4 z-[999] bg-white">
       {/* Logo */}
       <div>
         <img src="/logo_b.webp" alt="Logo" className="h-10" />
