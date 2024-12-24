@@ -15,7 +15,7 @@ const About = () => {
             <h1 className="uppercase text-white font-bold text-4xl xl:text-6xl pb-8 w-4/5">
               We are leading digital marketing agency.
             </h1>
-            <p className="text-white md:w-4/5 text-lg lg:pl-16  xl:pl-40 xl:pt-20">
+            <p className="text-gray-400 md:w-4/5 text-lg lg:pl-16  xl:pl-40 xl:pt-20">
               We’re a team of strategic digital marketing working globally with
               largest brands. We believe that progress only happens when you
               refuse to play things safe. We combine ideas and behaviors, and

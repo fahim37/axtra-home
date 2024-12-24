@@ -17,7 +17,7 @@ const App = () => {
       <Brands />
       <About />
       <Services />
-      {/* <ModernCarousel /> */}
+      <ModernCarousel />
       <Testimonial />
       <Workflow />
       <Pricing />

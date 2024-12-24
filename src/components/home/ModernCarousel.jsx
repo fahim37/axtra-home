@@ -60,8 +60,14 @@ export default function ModernCarousel() {
   }, [api]);
 
   return (
-    <div className="h-[1100px] bg-black">
-      <div className="relative w-[90%] mx-auto h-[90%] my-auto">
+    <div className="h-[1100px] bg-black mt-10">
+      <div className="uppercase text-white md:pt-24 md:pl-24 text-lg">
+        Featured
+        <br />
+        work
+      </div>
+
+      <div className="relative w-[90%] mx-auto h-[90%] pt-16">
         <Carousel
           setApi={setApi}
           className="w-full h-full"
@@ -74,14 +80,14 @@ export default function ModernCarousel() {
               <CarouselItem key={index} className="h-screen">
                 <div className="grid h-full grid-cols-1 md:grid-cols-2">
                   <div className="flex flex-col justify-center p-6 md:p-12">
-                    <div className="space-y-4">
-                      <div className="text-white text-6xl md:text-8xl font-bold">
+                    <div className="space-y-4 z-10">
+                      <div className="text-white text-6xl md:text-[150px] font-bold">
                         {slide.title}
                       </div>
-                      <div className="text-white text-6xl md:text-8xl font-bold">
+                      <div className="text-white text-6xl md:text-[150px] font-bold md:translate-x-[35%]">
                         {slide.subtitle}
                       </div>
-                      <div className="text-white text-6xl md:text-8xl font-bold">
+                      <div className="text-white text-6xl md:text-[150px] font-bold">
                         {slide.year}
                       </div>
                     </div>
@@ -98,18 +104,14 @@ export default function ModernCarousel() {
             ))}
           </CarouselContent>
 
-          <div className="absolute top-6 right-6 text-white text-xl">
-            <span>{current}</span>
-            <span className="mx-1">/</span>
+          <div className="absolute top-0 left-[30%] text-white text-xl">
+            <span className="text-6xl">{current}</span>
+            <span className="mx-1 text-6xl">/</span>
             <span>{count}</span>
           </div>
 
-          <CarouselPrevious className="absolute left-6 top-1/2 -translate-y-1/2 bg-transparent border-none hover:bg-transparent">
-            <FaArrowLeft className="w-8 h-8 text-white" />
-          </CarouselPrevious>
-          <CarouselNext className="absolute right-6 top-1/2 -translate-y-1/2 bg-transparent border-none hover:bg-transparent">
-            <FaArrowRight className="w-8 h-8 text-white" />
-          </CarouselNext>
+          <CarouselPrevious className="absolute left-6 top-1/2 -translate-y-1/2 bg-transparent border-white hover:bg-white text-white"></CarouselPrevious>
+          <CarouselNext className="absolute right-6 top-1/2 -translate-y-1/2 bg-transparent border-white hover:bg-white text-white"></CarouselNext>
         </Carousel>
       </div>
     </div>

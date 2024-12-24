@@ -21,7 +21,7 @@ const Header = () => {
         <img src="/logo_b.webp" alt="Logo" className="h-10" />
       </div>
 
-      <nav className="hidden lg:flex space-x-12">
+      <nav className="hidden lg:flex space-x-16">
         {links.map((link) => (
           <a key={link} href={`#${link.toLowerCase()}`} className="text-lg">
             <TextSlideOutIn text={link} />
