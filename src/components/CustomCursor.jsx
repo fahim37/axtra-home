@@ -18,7 +18,7 @@ const CustomCursor = () => {
       <motion.div
         className="fixed top-0 left-0 w-8 h-8 bg-transparent border border-blue-500 rounded-full pointer-events-none z-50"
         style={{
-          x: cursorPosition.x - 16, // Adjusted for the new size (8px radius -> 16px diameter)
+          x: cursorPosition.x - 16,
           y: cursorPosition.y - 16,
         }}
         transition={{ type: "spring", stiffness: 800, damping: 20 }}
@@ -27,7 +27,7 @@ const CustomCursor = () => {
       <motion.div
         className="fixed top-0 left-0 w-1 h-1 bg-blue-500 rounded-full pointer-events-none z-50"
         style={{
-          x: cursorPosition.x - 1, // Adjusted for the new size (1px radius -> 2px diameter)
+          x: cursorPosition.x - 1,
           y: cursorPosition.y - 1,
         }}
         transition={{ type: "spring" }}
