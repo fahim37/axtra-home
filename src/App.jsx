@@ -10,10 +10,12 @@ import Workflow from "./components/home/Workflow";
 import Blogs from "./components/home/Blogs";
 import Footer from "./components/Footer";
 import Pricing from "./components/home/Pricing";
+import CustomCursor from "./components/CustomCursor";
 
 const App = () => {
   return (
-    <div>
+    <div className="relative">
+      <CustomCursor />
       <Header />
       <div id="home">
         <HeroSection />
