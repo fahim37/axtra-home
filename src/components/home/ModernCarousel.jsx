@@ -63,9 +63,8 @@ export default function ModernCarousel() {
   return (
     <div className="h-[1100px] bg-black mt-10">
       <FadeB className="uppercase text-white md:pt-24 md:pl-24 text-lg">
-        Featured
-        <br />
-        work
+        <div>Featured<div/>
+        <div>work<div/>
       </FadeB>
 
       <div className="relative w-[90%] mx-auto h-[90%] pt-16">
