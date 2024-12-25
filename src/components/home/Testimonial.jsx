@@ -10,6 +10,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import PopImage from "../animated/PopImage";
 
 export default function Testimonial() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -55,7 +56,7 @@ export default function Testimonial() {
             y: mousePosition.y * 20,
           }}
         >
-          <img
+          <PopImage
             src="/testimonial/1.jpg"
             alt="Team member 1"
             className="rounded-lg shadow-lg"
@@ -70,7 +71,7 @@ export default function Testimonial() {
             y: mousePosition.y * 20,
           }}
         >
-          <img
+          <PopImage
             src="/testimonial/2.jpg"
             alt="Team member 2"
             className="rounded-lg shadow-lg"
@@ -85,7 +86,7 @@ export default function Testimonial() {
             y: mousePosition.y * 20,
           }}
         >
-          <img
+          <PopImage
             src="/testimonial/3.jpg"
             alt="Team member 3"
             className="rounded-lg shadow-lg"
@@ -100,7 +101,7 @@ export default function Testimonial() {
             y: mousePosition.y * 20,
           }}
         >
-          <img
+          <PopImage
             src="/testimonial/4.jpg"
             alt="Team member 4"
             className="rounded-lg shadow-lg"
@@ -114,7 +115,7 @@ export default function Testimonial() {
             y: mousePosition.y * 20,
           }}
         >
-          <img
+          <PopImage
             src="/testimonial/5.jpg"
             alt="Team member 4"
             className="rounded-lg shadow-lg"
@@ -128,7 +129,7 @@ export default function Testimonial() {
             y: mousePosition.y * 20,
           }}
         >
-          <img
+          <PopImage
             src="/testimonial/6.jpg"
             alt="Team member 4"
             className="rounded-lg shadow-lg"

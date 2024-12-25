@@ -7,6 +7,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import FadeB from "../animated/FadeB";
 
 const slides = [
   {
@@ -61,11 +62,11 @@ export default function ModernCarousel() {
 
   return (
     <div className="h-[1100px] bg-black mt-10">
-      <div className="uppercase text-white md:pt-24 md:pl-24 text-lg">
+      <FadeB className="uppercase text-white md:pt-24 md:pl-24 text-lg">
         Featured
         <br />
         work
-      </div>
+      </FadeB>
 
       <div className="relative w-[90%] mx-auto h-[90%] pt-16">
         <Carousel
@@ -78,25 +79,28 @@ export default function ModernCarousel() {
           <CarouselContent>
             {slides.map((slide, index) => (
               <CarouselItem key={index} className="h-screen">
-                <div className="grid h-full grid-cols-1 md:grid-cols-2">
-                  <div className="flex flex-col justify-center p-6 md:p-12">
-                    <div className="space-y-4 z-10">
-                      <div className="text-white text-6xl md:text-[150px] font-bold">
-                        {slide.title}
+                <div className="grid h-full grid-cols-1 md:grid-cols-2 relative">
+                  <div className="flex flex-col justify-center p-6 md:p-12 z-10">
+                    <FadeB className="space-y-4">
+                      <div>
+                        <div className="text-white text-6xl md:text-[150px] font-bold">
+                          {slide.title}
+                        </div>
+                        <div className="text-white text-6xl md:text-[150px] font-bold md:translate-x-[35%]">
+                          {slide.subtitle}
+                        </div>
+                        <div className="text-white text-6xl md:text-[150px] font-bold">
+                          {slide.year}
+                        </div>
                       </div>
-                      <div className="text-white text-6xl md:text-[150px] font-bold md:translate-x-[35%]">
-                        {slide.subtitle}
-                      </div>
-                      <div className="text-white text-6xl md:text-[150px] font-bold">
-                        {slide.year}
-                      </div>
-                    </div>
+                    </FadeB>
                   </div>
-                  <div className="relative hidden md:block">
+
+                  <div className="absolute inset-0 md:relative">
                     <img
                       src={slide.image}
                       alt={`Slide ${index + 1}`}
-                      className="absolute inset-0 object-cover w-full h-full"
+                      className="object-cover w-full h-full"
                     />
                   </div>
                 </div>

@@ -3,7 +3,7 @@ import React from "react";
 const Wfthree = () => {
   return (
     <div className="relative w-screen h-screen bg-[#fffaf0]">
-      <div className="grid grid-cols-1 md:grid-cols-2 md:pt-[120px] max-w-[85%] mx-auto gap-x-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 md:pt-[120px] max-w-[85%] mx-auto gap-4">
         <div>
           <h4 className="uppercase font-bold hidden md:block">
             why

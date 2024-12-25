@@ -24,14 +24,14 @@ const Footer = () => {
   return (
     <footer className="bg-black md:h-[60vh]">
       <div className="md:w-[90%] mx-auto border-b-[1px] border-slate-800">
-        <div className="grid grid-cols-[35%,20%,auto] gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-[35%,20%,auto] gap-5">
           <div>
             <img
               src="/logo_b.webp"
               alt="logo"
               className="invert pb-10 mt-[90px]"
             />
-            <p className="text-white w-[70%]">
+            <p className="text-white w-[70%] pb-8">
               When do they work well, and when do they on us and finally, when
               do we actually need how can we avoid them.
             </p>
@@ -67,7 +67,7 @@ const Footer = () => {
               variants={container}
               initial="hidden"
               animate="visible"
-              className="text-6xl md:text-8xl font-bold flex flex-wrap"
+              className="text-6xl md:text-8xl font-bold flex flex-wrap -translate-x-6 md:translate-x-0"
             >
               {letters.map((letter, index) => (
                 <motion.span
@@ -90,7 +90,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-between w-[95%] mx-auto pt-5">
+      <div className="flex flex-wrap gap-4 justify-between w-[95%] mx-auto pt-5">
         <p className="text-white">© by Fahim Ahmed Emon.</p>
         <div className="flex space-x-5">
           {links.map((link) => (

@@ -1,29 +1,33 @@
 import React from "react";
 import AnimatedButton from "../animated/AnimatedButton";
+import FadeB from "../animated/FadeB";
+import FadeL from "../animated/FadeL";
 
 const Services = () => {
   return (
     <div className="w-11/12 md:w-5/6 mx-auto">
       <div className="md:w-1/2 mx-auto relative">
-        <h3 className="uppercase pt-20 pb-4">Services</h3>
-        <h1 className="uppercase font-bold text-4xl xl:text-6xl">
-          <div>Our marketing</div> <div>Services</div>
-        </h1>
-        <div className="absolute hidden md:block top-2 left-0 md:left-36 w-[1px] h-20 bg-gray-200"></div>
-        <div
-          className="absolute hidden md:block top-[280px] left-0 md:left-36 w-[1px] h-64
+        <FadeB>
+          <h3 className="uppercase pt-20 pb-4">Services</h3>
+          <h1 className="uppercase font-bold text-4xl xl:text-6xl">
+            <div>Our marketing</div> <div>Services</div>
+          </h1>
+          <div className="absolute hidden md:block top-2 left-0 md:left-36 w-[1px] h-20 bg-gray-200"></div>
+          <div
+            className="absolute hidden md:block top-[280px] left-0 md:left-36 w-[1px] h-64
          bg-gray-200"
-        ></div>
+          ></div>
 
-        <p className="pt-20 md:pl-40 font-medium text-lg">
-          Consumers today rely heavily on digital means to research products. We
-          research a brand of bldend engaging with it, according to the
-          meanwhile, 51% of consumers say they use Google to research products
-          before buying.
-        </p>
+          <p className="pt-20 md:pl-40 font-medium text-lg">
+            Consumers today rely heavily on digital means to research products.
+            We research a brand of bldend engaging with it, according to the
+            meanwhile, 51% of consumers say they use Google to research products
+            before buying.
+          </p>
+        </FadeB>
       </div>
       <hr className="border-gray-200 mt-20 mb-20" />
-      <div className="grid grid-cols-1 md:grid-cols-[30%_40%_24%] lg:grid-cols-[30%_50%_20%] gap-4">
+      <FadeL className="grid grid-cols-1 md:grid-cols-[30%_40%_24%] lg:grid-cols-[30%_50%_20%] gap-4">
         <h2 className="uppercase font-bold text-4xl">
           Search Engine <br />
           Optimization
@@ -40,10 +44,10 @@ const Services = () => {
           </ul>
         </div>
         <AnimatedButton>Details</AnimatedButton>
-      </div>
+      </FadeL>
 
       <hr className="border-gray-200 mt-20 mb-20" />
-      <div className="grid grid-cols-1 md:grid-cols-[30%_40%_24%] lg:grid-cols-[30%_50%_20%] gap-4">
+      <FadeL className="grid grid-cols-1 md:grid-cols-[30%_40%_24%] lg:grid-cols-[30%_50%_20%] gap-4">
         <h2 className="uppercase font-bold text-4xl">
           Email <br />
           Marketing
@@ -60,9 +64,9 @@ const Services = () => {
           </ul>
         </div>
         <AnimatedButton>Details</AnimatedButton>
-      </div>
+      </FadeL>
       <hr className="border-gray-200 mt-20 mb-20" />
-      <div className="grid grid-cols-1 md:grid-cols-[30%_40%_24%] lg:grid-cols-[30%_50%_20%] gap-4">
+      <FadeL className="grid grid-cols-1 md:grid-cols-[30%_40%_24%] lg:grid-cols-[30%_50%_20%] gap-4">
         <h2 className="uppercase font-bold text-4xl">
           COntent <br />
           Marketing
@@ -79,9 +83,9 @@ const Services = () => {
           </ul>
         </div>
         <AnimatedButton>Details</AnimatedButton>
-      </div>
+      </FadeL>
       <hr className="border-gray-200 mt-20 mb-20" />
-      <div className="grid grid-cols-1 md:grid-cols-[30%_40%_24%] lg:grid-cols-[30%_50%_20%] gap-4">
+      <FadeL className="grid grid-cols-1 md:grid-cols-[30%_40%_24%] lg:grid-cols-[30%_50%_20%] gap-4">
         <h2 className="uppercase font-bold text-4xl">
           Social <br />
           Marketing
@@ -98,7 +102,7 @@ const Services = () => {
           </ul>
         </div>
         <AnimatedButton>Details</AnimatedButton>
-      </div>
+      </FadeL>
     </div>
   );
 };

@@ -3,12 +3,12 @@ import React from "react";
 
 const WfTwo = () => {
   return (
-    <div className="relative w-screen h-screen bg-[#f3ecec]">
+    <div className="relative w-screen md:h-screen bg-[#f3ecec]">
       <div
-        className="absolute bottom-0 left-4 h-[100px] w-[100px] bg-cover bg-center bg-no-repeat opacity-90"
+        className="absolute hidden md:block bottom-0 left-4 h-[100px] w-[100px] bg-cover bg-center bg-no-repeat opacity-90"
         style={{ backgroundImage: "url('/home/wf2.png')" }}
       />
-      <div className="grid grid-cols-2 md:pt-[120px] max-w-[85%] mx-auto gap-x-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 md:pt-[120px] max-w-[85%] mx-auto gap-4">
         <div>
           <h4 className="uppercase font-bold hidden md:block">
             why

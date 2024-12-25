@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 
-export default function FadeB({ children, className }) {
+export default function FadeL({ children, className }) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
@@ -16,8 +16,8 @@ export default function FadeB({ children, className }) {
   };
 
   const childVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0 },
+    hidden: { opacity: 0, x: -50 },
+    visible: { opacity: 1, x: 0 },
   };
 
   return (
