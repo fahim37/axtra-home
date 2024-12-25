@@ -102,14 +102,13 @@ const Header = () => {
                     onClick={() => scrollToSection(item.id)}
                     className="text-5xl font-bold hover:text-gray-300 flex items-center justify-between"
                   >
-                    <TextSlideOutIn text={item.name} />
+                    <TextSlideOutIn text={item.name} y1={-100} y2={100} />
                   </button>
                 </motion.div>
               ))}
             </nav>
           </div>
 
-          {/* Right Panel */}
           <div className="w-96 bg-neutral-900 p-8 hidden lg:block">
             <div className="relative">
               <input

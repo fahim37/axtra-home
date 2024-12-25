@@ -1,7 +1,7 @@
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const TextSlideOutIn = ({ text }) => {
+const TextSlideOutIn = ({ text, y1 = -25, y2 = 30 }) => {
   return (
     <motion.div
       className="relative overflow-hidden"
@@ -17,7 +17,7 @@ const TextSlideOutIn = ({ text }) => {
               initial={{ y: 0 }}
               variants={{
                 rest: { y: 0 },
-                hover: { y: -25 },
+                hover: { y: y1 },
               }}
               transition={{ duration: 0.3, delay: index * 0.05 }}
               className="inline-block"
@@ -31,7 +31,7 @@ const TextSlideOutIn = ({ text }) => {
               key={`bottom-${index}`}
               initial={{ y: 20 }}
               variants={{
-                rest: { y: 20 },
+                rest: { y: y2 },
                 hover: { y: 0 },
               }}
               transition={{ duration: 0.3, delay: index * 0.05 }}
