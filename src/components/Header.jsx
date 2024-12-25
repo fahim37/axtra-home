@@ -5,17 +5,24 @@ import { FaMagnifyingGlass } from "react-icons/fa6";
 
 const Header = () => {
   const links = [
-    "HOME",
-    "ABOUT",
-    "PAGES",
-    "SERVICES",
-    "TEAM",
-    "BLOG",
-    "CONTACT",
+    { label: "HOME", id: "home" },
+    { label: "ABOUT", id: "about" },
+    { label: "PAGES", id: "pages" },
+    { label: "SERVICES", id: "services" },
+    { label: "TEAM", id: "team" },
+    { label: "BLOG", id: "blog" },
+    { label: "CONTACT", id: "contact" },
   ];
 
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
   return (
-    <header className="sticky top-0 flex justify-between items-center px-6 py-4 z-10 bg-white">
+    <header className="sticky top-0 flex justify-between items-center px-6 py-4 z-50 bg-white">
       {/* Logo */}
       <div>
         <img src="/logo_b.webp" alt="Logo" className="h-10" />
@@ -23,9 +30,13 @@ const Header = () => {
 
       <nav className="hidden lg:flex space-x-16">
         {links.map((link) => (
-          <a key={link} href={`#${link.toLowerCase()}`} className="text-lg">
-            <TextSlideOutIn text={link} />
-          </a>
+          <button
+            key={link.id}
+            onClick={() => scrollToSection(link.id)}
+            className="text-lg cursor-pointer bg-transparent border-none"
+          >
+            <TextSlideOutIn text={link.label} />
+          </button>
         ))}
       </nav>
       <div className="flex items-center space-x-8">

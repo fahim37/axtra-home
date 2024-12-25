@@ -15,15 +15,33 @@ const App = () => {
   return (
     <div>
       <Header />
-      <HeroSection />
-      <Brands />
-      <About />
-      <Services />
-      <ModernCarousel />
-      <Testimonial />
-      <Workflow />
-      <Pricing />
-      <Blogs />
+      <div id="home">
+        <HeroSection />
+      </div>
+      <div id="brands">
+        <Brands />
+      </div>
+      <div id="about">
+        <About />
+      </div>
+      <div id="services">
+        <Services />
+      </div>
+      <div id="carousel">
+        <ModernCarousel />
+      </div>
+      <div id="team">
+        <Testimonial />
+      </div>
+      <div id="workflow">
+        <Workflow />
+      </div>
+      <div id="pricing">
+        <Pricing />
+      </div>
+      <div id="blog">
+        <Blogs />
+      </div>
       <Footer />
     </div>
   );
